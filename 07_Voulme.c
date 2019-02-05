@@ -4,16 +4,16 @@
 *Tecnologia em Análise e Desenvolvimento de Sistemas
 *Estrutura de Dados
 *Autor: Jobs
-*Area e Diâmetro de uma circunferência
+*Área e Diâmetro de uma circunferência
 */
-#include<stdio.h>
+#include <stdio.h>
+#include<math.h>
 
 int main(){
-  float pi = 3.141592, raio;
+  float pi = 3.14, raio;
   printf("Digite o Raio: ");
   scanf("%f",&raio);
-  printf("Area: %.3f\n",pi*(raio*2));
-  printf("Volume: %.3f\n",(((4/3)*pi)*(raio*3)));
-  printf("Diametro: %.3f\n", raio*2);
+  printf("Area: %.2f\n", 4.0*pi*pow(raio, 2));
+  printf("Volume: %.2f\n", (4.0/3.0 *pi*(pow (raio, 3))));
   return 0;
 }
