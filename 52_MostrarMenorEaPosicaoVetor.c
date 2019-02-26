@@ -4,7 +4,7 @@
  */
 
 #include <stdio.h>
-#define t 5
+#define t 6
 
 int main() {
     int vet[t], i, menor, posMenor;
