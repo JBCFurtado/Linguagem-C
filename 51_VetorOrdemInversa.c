@@ -5,7 +5,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-main()
+int main(void)
 {
 int x, vet[10];
 for(x=1; x<=10; x++)

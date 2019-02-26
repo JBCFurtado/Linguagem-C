@@ -7,10 +7,10 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#include<math.h>
-main()
+
+int main(void)
 {
-int x, vet[8], num, achei=0;
+int x, vet[8], num, y=0;
 for(int x=0;x<8;x++)
 {
 printf("\n[%d] Digite um numero: ",x);
@@ -23,9 +23,9 @@ for(int x=0;x<8;x++)
 if(vet[x]==num)
 {
 printf("\n O numero %d esta na posicao %d: ",num,x);
-achei=1;
+y=1;
 }
-if(achei!=1)
+if(y!=1)
 printf("\n Este numero nao existe");
 printf("\n\n");
 system("pause");

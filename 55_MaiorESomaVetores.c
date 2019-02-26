@@ -5,7 +5,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#include<math.h>
+
 main()
 {
 int vet1[8], x, cont=0, soma=0, soma2=0;
