@@ -7,7 +7,7 @@
 #define t 5
 
 int main() {
-    int vet[t], i, maior, posMaior, menor, posMenor;
+    int vet[t], i, menor, posMenor;
     for (i = 0; i < t; i++) {
         scanf("%i", &vet[i]);
     }
