@@ -23,10 +23,10 @@ for(int x=0;x<8;x++)
 if(vet[x]==num)
 {
 printf("\n O numero %d esta na posicao %d: ",num,x);
-y=1;
 }
-if(y!=1)
+if(vet[x]!=num){
 printf("\n Este numero nao existe");
+}
 printf("\n\n");
 system("pause");
 return(0);
