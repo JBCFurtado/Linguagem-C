@@ -4,16 +4,15 @@
  */
 
 #include <stdio.h>
-#define t 6
 
 int main() {
-    int vet[t], i, menor, posMenor;
+    int vet[6], i, menor, posMenor;
     for (i = 0; i < t; i++) {
         scanf("%i", &vet[i]);
     }
     menor    = vet[0];
     posMenor = 0;
-    for (i = 1; i < t; i++) {
+    for (i = 1; i < 6; i++) {
         if (vet[i] < menor) {
             menor    = vet[i];
             posMenor = i;
