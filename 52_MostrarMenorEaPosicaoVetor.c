@@ -7,7 +7,7 @@
 
 int main() {
     int vet[6], i, menor, posMenor;
-    for (i = 0; i < t; i++) {
+    for (i = 0; i < 6; i++) {
         scanf("%i", &vet[i]);
     }
     menor    = vet[0];
@@ -19,9 +19,9 @@ int main() {
         }
     }
     printf("Vetor: ");
-    for (i = 0; i < t; i++) {
+    for (i = 0; i < 6; i++) {
         printf("%i ", vet[i]);
-    }
+    
     printf("\nMenor valor: %i - posicao: %i", menor, posMenor+1);
     return 0;
 }

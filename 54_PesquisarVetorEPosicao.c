@@ -5,29 +5,25 @@
  *MSG que não existe.
  */
 
-#include<stdio.h>
-#include<stdlib.h>
-
-int main(void)
-{
-int x, vet[8], num, y=0;
-for(int x=0;x<8;x++)
-{
-printf("\n[%d] Digite um numero: ",x);
-scanf("%d",&vet[x]);
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(void){
+	int vet[8], x,numero, posicao=0;
+	for (x=0; x<8; x++){
+		printf("Insira um numero no Vetor %d: ", x);
+		scanf("%d", &vet[x]);
+	}
+	printf("\n\n");
+	printf("Pesquise um numero no Vetor: ", x);
+	scanf("%d", &numero);
+	
+	for (x=0;x<8;x++)
+	if(vet[x]==numero){
+	printf("\nO numero: %d \nEsta na posicao: %i", numero,x);
+	posicao=1;
 }
-printf("\n\n");
-printf("Digite um valor a ser pesquisado: ");
-scanf("%d",&num);
-for(int x=0;x<8;x++)
-if(vet[x]==num)
-{
-printf("\n O numero %d esta na posicao %d: ",num,x);
-}
-if(vet[x]!=num){
-printf("\n Este numero nao existe");
-}
-printf("\n\n");
-system("pause");
-return(0);
+	if (posicao!=1)
+	printf("\nEste numero nao exite!");	
+	return 0;
 }
